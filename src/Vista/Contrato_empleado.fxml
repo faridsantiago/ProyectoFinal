@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="561.0" prefWidth="942.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.Contrato_empleadoController">
+   <children>
+      <TableView fx:id="tb_con_emp" editable="true" layoutX="14.0" layoutY="68.0" prefHeight="479.0" prefWidth="902.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="26.0" AnchorPane.topAnchor="68.0">
+        <columns>
+          <TableColumn fx:id="columID" editable="false" prefWidth="64.0" text="ID" />
+          <TableColumn fx:id="columNombre" editable="false" prefWidth="340.0" text="Nombre" />
+            <TableColumn fx:id="columTipo" prefWidth="75.0" text="Tipo de Contrato" />
+            <TableColumn fx:id="columInicio" editable="false" prefWidth="363.0" text="Inicio de Contrato" />
+            <TableColumn fx:id="columFinal" editable="false" prefWidth="131.0" text="Fin de Contrato" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label layoutX="35.0" layoutY="23.0" prefHeight="31.0" prefWidth="257.0" text="Contrato de empleados">
+         <font>
+            <Font name="Poppins Regular" size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

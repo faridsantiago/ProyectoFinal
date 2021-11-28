@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="971.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.Contrato_conductoresController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="562.0" prefWidth="921.0" AnchorPane.bottomAnchor="21.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="36.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <TableView fx:id="tb_contra_conduc" layoutX="15.0" layoutY="58.0" prefHeight="372.0" prefWidth="915.0" AnchorPane.bottomAnchor="86.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="-9.0" AnchorPane.topAnchor="58.0">
+              <columns>
+                <TableColumn fx:id="columID" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="columNombre" prefWidth="75.0" text="Nombre" />
+                  <TableColumn fx:id="columLicencia" prefWidth="75.0" text="Licencia" />
+                  <TableColumn fx:id="columTipo" prefWidth="75.0" text="Tipo de contrato" />
+                  <TableColumn fx:id="columInicio" prefWidth="75.0" text="Inicio de Contrato " />
+                  <TableColumn fx:id="columFinal" prefWidth="75.0" text="Fin de Contrato" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <Label layoutX="38.0" layoutY="6.0" text="Contrato conductores">
+               <font>
+                  <Font name="Poppins Regular" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

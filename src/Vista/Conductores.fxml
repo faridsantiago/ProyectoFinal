@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="942.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.ConductoresController">
+   <children>
+      <TableView fx:id="tablaConductores" layoutX="27.0" layoutY="81.0" prefHeight="370.0" prefWidth="889.0">
+        <columns>
+          <TableColumn fx:id="columID" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="columNombre" prefWidth="75.0" text="Nombre" />
+            <TableColumn fx:id="ColumCC" prefWidth="75.0" text="CC" />
+            <TableColumn fx:id="columEdad" prefWidth="75.0" text="Edad" />
+            <TableColumn fx:id="columLicencia" prefWidth="75.0" text="Licencia" />
+            <TableColumn fx:id="columTelefono" prefWidth="58.0" text="Telefono" />
+            <TableColumn fx:id="columContrato" prefWidth="73.0" text="Tipo de Contrato " />
+            <TableColumn fx:id="columInicio" prefWidth="88.0" text="Inicio de Contrato" />
+            <TableColumn fx:id="columFin" prefWidth="108.0" text="Fin de Contato" />
+            <TableColumn fx:id="columEps" prefWidth="53.0" text="EPS" />
+            <TableColumn fx:id="columArl" prefWidth="75.0" text="ARL" />
+            <TableColumn fx:id="columCompensacion" prefWidth="75.0" text="Caja de Compensacion" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label layoutX="37.0" layoutY="30.0" text="Conductores">
+         <font>
+            <Font name="Poppins Regular" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_aggconductor" layoutX="27.0" layoutY="490.0" mnemonicParsing="false" onAction="#Agregar_conductor" prefHeight="33.0" prefWidth="141.0" style="-fx-background-color: #5EE401;" text="Agregar Conductor" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_elimconductor" layoutX="189.0" layoutY="490.0" mnemonicParsing="false" onAction="#EliminarConductor" prefHeight="33.0" prefWidth="141.0" style="-fx-background-color: #EC0202;" text="Eliminar Conductor" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_editconductor" layoutX="357.0" layoutY="490.0" mnemonicParsing="false" onAction="#Editar_conductor" prefHeight="33.0" prefWidth="102.0" style="-fx-background-color: #ECA202;" text="Editar Datos " textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_descargare2" layoutX="789.0" layoutY="490.0" mnemonicParsing="false" onAction="#DescargarPDF" prefHeight="33.0" prefWidth="127.0" style="-fx-background-color: #02ECD0;" text="Desacargar Excel" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
